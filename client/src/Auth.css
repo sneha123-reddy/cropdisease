@@ -1,0 +1,89 @@
+/* Page background and centering */
+.auth-page {
+  min-height: 100vh;
+  background: linear-gradient(to top right, #eafaf1, #c8f7d5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Auth form card */
+.auth-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.6s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+.auth-box h2 {
+  color: #2e7d32;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+/* Input fields */
+.auth-box input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.auth-box input:focus {
+  border-color: #2e7d32;
+}
+
+/* Submit button */
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-box button:hover {
+  background-color: #388e3c;
+}
+
+/* Additional text */
+.auth-box p {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Links inside auth-box */
+.auth-box a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-box a:hover {
+  text-decoration: underline;
+}
+
+/* Smooth fade in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
